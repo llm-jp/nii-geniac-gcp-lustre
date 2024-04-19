@@ -61,9 +61,9 @@ resources:
     ### Lustre Object Storage Target disks
     ### ost_per_oss sets the number of PD disks if used, up to 256TB per VM.
     ### if ost_disk_type = local-ssd then ost_per_oss is ignored.
-    ost_per_oss             : 1
+    ost_per_oss             : 2
     ost_disk_type           : pd-ssd
-    ost_disk_size_gb        : 8000
+    ost_disk_size_gb        : 4000
 
     ## Lustre HSM Lemur Configuration
     #hsm_node_count         : 1
