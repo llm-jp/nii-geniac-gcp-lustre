@@ -22,12 +22,12 @@ resources:
   properties:
     ## Cluster Configuration
     cluster_name            : lustre
-    zone                    : asia-southeast1-c
+    zone                    : asia-northeast1-b
     #cidr                    : 172.17.0.0/20
     external_ips            : False
     ### Use these fields to deploy Lustre in an existing VPC, Subnet, and/or Shared VPC
-    vpc_net                 : slurm-sys-net
-    vpc_subnet              : slurm-sys-subnet
+    vpc_net                 : slurm-a3-base-tky-sysnet
+    vpc_subnet              : slurm-a3-base-tky-sysnet-subnet
     #shared_vpc_host_proj    : < Shared VPC Host Project name >
 
     ## Filesystem Configuration
@@ -52,7 +52,7 @@ resources:
     mdt_disk_size_gb        : 1000
 
     ## Lustre OSS Configuration
-    oss_node_count          : 8
+    oss_node_count          : 2
     #oss_ip_range_start      : 172.17.0.32
     oss_machine_type        : n2-standard-16
     ### OSS Boot disk
@@ -63,7 +63,7 @@ resources:
     ### if ost_disk_type = local-ssd then ost_per_oss is ignored.
     ost_per_oss             : 2
     ost_disk_type           : pd-ssd
-    ost_disk_size_gb        : 4000
+    ost_disk_size_gb        : 2500
 
     ## Lustre HSM Lemur Configuration
     #hsm_node_count         : 1
