@@ -17,11 +17,11 @@ imports:
 - path: lustre.jinja
 
 resources:
-- name: lustre
+- name: lustre-tky
   type: lustre.jinja
   properties:
     ## Cluster Configuration
-    cluster_name            : lustre
+    cluster_name            : lustre-tky
     zone                    : asia-northeast1-b
     #cidr                    : 172.17.0.0/20
     external_ips            : False
